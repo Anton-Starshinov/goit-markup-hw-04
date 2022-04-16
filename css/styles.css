@@ -91,6 +91,14 @@ margin-left: 30px;
 .header-tel:hover, .header-tel:focus{
   color: var(--accent-color);
 }
+.header-connect {
+display: flex;
+align-items: baseline;
+}
+.header-mail-svg {
+margin-right: 10px;
+fill: currentColor;
+}
 /*------------Hero--------------*/
 .conteiner-hero {
   width: 1600px;
@@ -153,6 +161,17 @@ margin-left: -30px;
 .slogan-item {
 flex-basis: calc(100% / 4 - 30px);
 margin-left: 30px;
+}
+.slogan-icon {
+width: 270px;
+height: 120px;
+padding: 25px 100px 25px 100px;
+background: #F5F4FA;
+border-radius: 4px;
+margin-bottom: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .slogan-title {
 margin-bottom: 10px;
@@ -224,6 +243,7 @@ margin-left: 30px;
   color: var(--header-color);
 }
 .command-work {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -235,6 +255,28 @@ margin-left: 30px;
   padding-top: 30px;
   padding-bottom: 16px;
 }
+.command-soc-list {
+  display: flex;
+  justify-content: center;
+}
+.command-soc-item + .command-soc-item {
+margin-left: 10px;
+}
+.command-soc-link {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #AFB1B8;
+}
+.command-soc-link:hover, .command-soc-link:focus {
+background-color: var(--accent-color);
+fill: #ffffff;
+}
+
 /*---------Постоянные клиенты--------*/
 .clients {
   padding-top: 94px;
@@ -257,6 +299,24 @@ margin-left: -30px;
 flex-basis: calc(100% / 6 - 30px);
 margin-left: 30px;
 }
+.clients-link {
+width: 170px;
+height: 92px;
+background-color: #ffffff;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
+fill: #AFB1B8;
+}
+.clients-link:hover {
+background-color: #FFFFFF;
+fill: var(--accent-color);
+border: 1px solid var(--accent-color);
+border-radius: 4px;
+}
+
 /*--------------Подвал---------------*/
 .footer {
   padding-top: 60px;
@@ -264,6 +324,7 @@ margin-left: 30px;
   background-color: #2F303A;
 }
 .footer-logo{
+margin-bottom: 20px;
 font-family: 'Raleway', sans-serif;
 font-weight: 700;
 font-size: 26px;
@@ -277,7 +338,6 @@ color: var(--accent-color);
 .footer-address {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
 }
 .footer-text{
   font-family: 'Roboto', sans-serif;
@@ -301,4 +361,40 @@ color: var(--accent-color);
 .footer-tel:hover,.footer-mail:hover,
 .footer-tel:focus, .footer-mail:focus {
 color: var(--accent-color);
+}
+.footer-list {
+display: flex;
+}
+.footer-soc {
+margin-top: 12px;
+margin-left: 70px;
+width: 206px;
+height: 80px;
+display: flex;
+flex-direction: column;
+}
+.footer-soc-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.footer-soc-title {
+  margin-bottom: 20px;
+}
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #FFFFFF;
+}
+.footer-soc-link:hover, .footer-soc-link:focus {
+background-color: var(--accent-color);
+fill: #ffffff;
 }
